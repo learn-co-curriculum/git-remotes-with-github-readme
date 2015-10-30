@@ -23,6 +23,24 @@ Github does nothing special in the git universe. It's just another git repositor
 2. `git add .` + `git commit -m "initialize git"`. Add and commit the new file created by the init command in the step 1.
 3. `git remote add origin your-remote-repository-URL`. This sets the remote, so you can push and pull code.
 
+###Note on Origin
+What is `origin`? Origin is just the name of the repo, but it could be anything. Origin is simply a convention for the default repo name. Let's take a closer look by changing the name of the repo:
+
+```bash
+git remote -v
+# View existing remotes
+# origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+# origin  https://github.com/OWNER/REPOSITORY.git (push)
+
+git remote rename origin destination
+# Change remote name from 'origin' to 'destination'
+
+git remote -v
+# Verify remote's new name
+# destination  https://github.com/OWNER/REPOSITORY.git (fetch)
+# destination  https://github.com/OWNER/REPOSITORY.git (push)
+```
+
 ##git push + git pull
 Now that we added a remote repo, there are two actions. Send our latest work up and retrieve the latest work from the remote. 
 
