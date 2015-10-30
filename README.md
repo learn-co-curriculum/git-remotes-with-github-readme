@@ -8,7 +8,6 @@
 5. Use git push
 6. Use git pull
 
-adapt from https://github.com/learn-co-curriculum/git-todo (2nd half) and from https://github.com/learn-co-curriculum/git-github-and-learn
 
 ##Why this is useful
 Github does nothing special in the git universe. It's just another git repository in the cloud. IF you don't want to work with anyone else, you don't need remotes. However, this is rarely the case, and we want to work with others! So, we have to talk to remotes. 
