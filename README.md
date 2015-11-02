@@ -10,7 +10,7 @@
 
 
 ##Why this is useful
-Github does nothing special in the git universe. It's just another git repository in the cloud. IF you don't want to work with anyone else, you don't need remotes. However, this is rarely the case, and we want to work with others! So, we have to talk about remotes. 
+Github does nothing special in the git universe. It's just another git repository in the cloud. If you don't want to work with anyone else, you don't need remotes. However, this is rarely the case, and we want to work with others! So, we have to talk about remotes. 
 
 ##Creating a remote repository on Github
 
@@ -64,7 +64,7 @@ This will push your code up the remote repo/branch you're tracking.
 Then explain push and pull (show explicit, then show that by default it's called origin/master).
 
 ###git pull
-As we collaborate with other people, inevitably they will push some code. The only problem is, now our code on our machine (our local repo) is out of sync with the remote repo. To remedy this, we must pull down the code to our local repo. No surprises here. To do this we run:
+As we collaborate with other people, inevitably they will push some code. The only problem is that now our code on our machine (our local repo) is out of sync with the remote repo. To remedy this, we must pull down the code to our local repo. No surprises here. To do this we run:
 
 ```bash
 git pull
