@@ -41,6 +41,12 @@ git remote -v
 # destination  https://github.com/OWNER/REPOSITORY.git (push)
 ```
 
+For consistency sake, let's go ahead and rename `destinationn` back to `origin`:
+
+```bash
+git remote rename destination origin
+```
+
 ##git push + git pull
 Now that we added a remote repo, there are two actions. Send our latest work up and retrieve the latest work from the remote. 
 
