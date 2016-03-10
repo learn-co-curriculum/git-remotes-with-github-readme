@@ -3,14 +3,14 @@
 ##Objectives
 1. Describe Github and its relationship with git
 2. Create a remote repository on Github
-3. Use git push to connect your local repository of files to your remote repository 
+3. Use git push to connect your local repository of files to your remote repository
 4. Use git remote
 5. Use git push
 6. Use git pull
 
 
 ##Why this is useful
-Github does nothing special in the git universe. It's just another git repository in the cloud. If you don't want to work with anyone else, you don't need remotes. However, this is rarely the case, and we want to work with others! So, we have to talk about remotes. 
+Github does nothing special in the git universe. It's just another git repository in the cloud. If you don't want to work with anyone else, you don't need remotes. However, this is rarely the case, and we want to work with others! So, we have to talk about remotes.
 
 ##Creating a remote repository on Github
 
@@ -41,29 +41,29 @@ git remote -v
 # destination  https://github.com/OWNER/REPOSITORY.git (push)
 ```
 
-For consistency sake, let's go ahead and rename `destinationn` back to `origin`:
+For consistency's sake, let's go ahead and rename `destinationn` back to `origin`:
 
 ```bash
 git remote rename destination origin
 ```
 
 ##git push + git pull
-Now that we added a remote repo, there are two actions. Send our latest work up and retrieve the latest work from the remote. 
+Now that we added a remote repo, there are two actions. Send our latest work up and retrieve the latest work from the remote.
 
 ###git push
 We use this command when we want to send some code from the local repository to the associated remote repository.
 
-`git push` takes two arguments. The first is the name of the remote repo. Remember, `origin` is just an alias that refers to the repository name. You don't actually have to enter the repository name. Instead, you can just use `origin`. The second is the name of the remote branch you want to send code to. In the example below, we're pushing to the master branch on our remote location of our repository, referred to as `origin`. To find the all the branch names, run `git branch -r`. 
+`git push` takes two arguments. The first is the name of the remote repo. Remember, `origin` is just an alias that refers to the repository name. You don't actually have to enter the repository name. Instead, you can just use `origin`. The second is the name of the remote branch you want to send code to. In the example below, we're pushing to the master branch on our remote location of our repository, referred to as `origin`. To find the all the branch names, run `git branch -r`.
 
 ```bash
 git push origin master
-``` 
+```
 
 That is the explicit way to push. You can also implicitly push your code by running:
 
 ```bash
 git push
-``` 
+```
 This will push your code up the remote repo/branch you're tracking.
 
 [For more details, check out the Github guides on pushing](https://help.github.com/articles/pushing-to-a-remote/)
@@ -74,7 +74,7 @@ As we collaborate with other people, inevitably they will push some code. The on
 
 ```bash
 git pull
-``` 
+```
 
 Again, we can also do this explicitly if need be by adding the remote name and branch as arguments: `git pull origin master`.
 
