@@ -41,7 +41,7 @@ git remote -v
 # destination  https://github.com/OWNER/REPOSITORY.git (push)
 ```
 
-For consistency's sake, let's go ahead and rename `destinationn` back to `origin`:
+For consistency's sake, let's go ahead and rename `destination` back to `origin`:
 
 ```bash
 git remote rename destination origin
@@ -81,3 +81,5 @@ Again, we can also do this explicitly if need be by adding the remote name and b
 [For more details, check out the Github guides on pulling](https://help.github.com/articles/fetching-a-remote/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-remotes-with-github-readme' title='Git Remotes + Github'>Git Remotes + Github</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-remotes-with-github-readme'>Git Remotes and Github</a> on Learn.co and start learning to code for free.</p>
