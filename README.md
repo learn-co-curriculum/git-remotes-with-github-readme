@@ -67,7 +67,6 @@ git push
 This will push your code up the remote repo/branch you're tracking.
 
 [For more details, check out the Github guides on pushing](https://help.github.com/articles/pushing-to-a-remote/)
-Then explain push and pull (show explicit, then show that by default it's called origin/master).
 
 ###git pull
 As we collaborate with other people, inevitably they will push some code. The only problem is that now our code on our machine (our local repo) is out of sync with the remote repo. To remedy this, we must pull down the code to our local repo. No surprises here. To do this we run:
@@ -81,3 +80,5 @@ Again, we can also do this explicitly if need be by adding the remote name and b
 [For more details, check out the Github guides on pulling](https://help.github.com/articles/fetching-a-remote/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-remotes-with-github-readme' title='Git Remotes + Github'>Git Remotes + Github</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-remotes-with-github-readme'>Git Remotes and Github</a> on Learn.co and start learning to code for free.</p>
