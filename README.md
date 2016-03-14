@@ -41,7 +41,7 @@ git remote -v
 # destination  https://github.com/OWNER/REPOSITORY.git (push)
 ```
 
-For consistency's sake, let's go ahead and rename `destinationn` back to `origin`:
+For consistency's sake, let's go ahead and rename `destination` back to `origin`:
 
 ```bash
 git remote rename destination origin
