@@ -1,30 +1,27 @@
-#Git Remotes + Github
+#Git Remotes + GitHub
 
 ##Objectives
-1. Describe Github and its relationship with git
-2. Create a remote repository on Github
-3. Use git push to connect your local repository of files to your remote repository
-4. Use git remote
-5. Use git push
-6. Use git pull
-
+1. Describe GitHub and its relationship with Git
+2. Create a remote repository on GitHub
+3. Use `git push` to connect your local repository of files to your remote repository
+4. Use `git remote`
+5. Use `git push`
+6. Use `git pull`
 
 ##Why this is useful
-Github does nothing special in the git universe. It's just another git repository in the cloud. If you don't want to work with anyone else, you don't need remotes. However, this is rarely the case, and we want to work with others! So, we have to talk about remotes.
+GitHub does nothing special in the Git universe. It's just another Git repository in the cloud. If you don't want to work with anyone else, you don't need remotes. However, this is rarely the case– we want to work with others! So, let's talk about remotes.
 
-##Creating a remote repository on Github
-
-1. From your Github profile, click the "Create New Repository" button.
-2. After you create the repo, click the "Copy to clipboard" symbol on the right-hand side of the screen to copy the url (we'll use this in the next section)
-
+##Creating a remote repository on GitHub
+1. Go to [github.com/new](https://github.com/new).
+2. After you create the repo, click the "Copy to clipboard" symbol on the right-hand side of the screen (![GitHub clipboard](http://i.imgur.com/NU4FVts.png)) to copy the url (we'll use this in the next section).
 
 ##Connecting your remote repo to a local repo
 1. `git init`
-2. `git add .` + `git commit -m "initialize git"`. Add and commit the new file created by the init command in the step 1.
+2. `git add .` + `git commit -m "initialize git"`. Add and commit the new file created by the `git init` command in step 1.
 3. `git remote add origin your-remote-repository-URL`. This sets the remote, so you can push and pull code.
 
-###Note on Origin
-What is `origin`? Origin is just the name of the repo, but it could be anything. Origin is simply a convention for the default repo name. Let's take a closer look by changing the name of the repo:
+###Note on `origin`
+What is `origin`? "Origin" is simply the default alias assigned to your new remote repo, but we could rename it anything. Let's try changing the name to `destination`:
 
 ```bash
 git remote -v
@@ -47,13 +44,13 @@ For consistency's sake, let's go ahead and rename `destination` back to `origin`
 git remote rename destination origin
 ```
 
-##git push + git pull
-Now that we added a remote repo, there are two actions. Send our latest work up and retrieve the latest work from the remote.
+##`git push` + `git pull`
+Now that we added a remote repo, there are two actions. We can send our latest work to and retrieve the latest work from the remote.
 
-###git push
+###`git push`
 We use this command when we want to send some code from the local repository to the associated remote repository.
 
-`git push` takes two arguments. The first is the name of the remote repo. Remember, `origin` is just an alias that refers to the repository name. You don't actually have to enter the repository name. Instead, you can just use `origin`. The second is the name of the remote branch you want to send code to. In the example below, we're pushing to the master branch on our remote location of our repository, referred to as `origin`. To find all the branch names, run `git branch -r`.
+`git push` takes two arguments. The first is the name of the remote repo. Remember, `origin` is just an alias that refers to the repository name. You don't actually have to enter the repository name. Instead, you can just use `origin`. The second is the name of the remote branch you want to send code to. In the example below, we're pushing to the master branch of our remote repository, referred to as `origin`. To find all the branch names, run `git branch -r`.
 
 ```bash
 git push origin master
@@ -64,12 +61,12 @@ That is the explicit way to push. You can also implicitly push your code by runn
 ```bash
 git push
 ```
-This will push your code up the remote repo/branch you're tracking.
+This will push your code up to the remote repo/branch you're tracking.
 
-[For more details, check out the Github guides on pushing](https://help.github.com/articles/pushing-to-a-remote/)
+[For more details, check out the GitHub guide on pushing.](https://help.github.com/articles/pushing-to-a-remote/)
 
-###git pull
-As we collaborate with other people, inevitably they will push some code. The only problem is that now our code on our machine (our local repo) is out of sync with the remote repo. To remedy this, we must pull down the code to our local repo. No surprises here. To do this we run:
+###`git pull`
+As we collaborate with other people, inevitably they will push some code. The only problem is that now the code on our machine (our local repo) is out of sync with the remote repo. To remedy this, we must pull down the new code from the remote repo to our local. No surprise here. To do this, run:
 
 ```bash
 git pull
@@ -77,8 +74,6 @@ git pull
 
 Again, we can also do this explicitly if need be by adding the remote name and branch as arguments: `git pull origin master`.
 
-[For more details, check out the Github guides on pulling](https://help.github.com/articles/fetching-a-remote/)
+[For more details, check out the GitHub guide on pulling.](https://help.github.com/articles/fetching-a-remote/)
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-remotes-with-github-readme' title='Git Remotes + Github'>Git Remotes + Github</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-remotes-with-github-readme'>Git Remotes and Github</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-remotes-with-github-readme' title='Git Remotes + GitHub'>Git Remotes + GitHub</a> on Learn.co and start learning to code for free.</p>
