@@ -1,6 +1,6 @@
-#Git Remotes + Github
+# Git Remotes + Github
 
-##Objectives
+## Objectives
 1. Describe Github and its relationship with git
 2. Create a remote repository on Github
 3. Use git push to connect your local repository of files to your remote repository
@@ -9,21 +9,23 @@
 6. Use git pull
 
 
-##Why this is useful
+## Why this is useful
 Github does nothing special in the git universe. It's just another git repository in the cloud. If you don't want to work with anyone else, you don't need remotes. However, this is rarely the case, and we want to work with others! So, we have to talk about remotes.
 
-##Creating a remote repository on Github
+## Creating a remote repository on Github
 
 1. From your Github profile, click the "Create New Repository" button.
-2. After you create the repo, click the "Copy to clipboard" symbol on the right-hand side of the screen to copy the url (we'll use this in the next section)
+2. After you create the repo, you should see a "Quick setup" page. Click the "Copy to clipboard" symbol next to the repo URL (pictured) to copy the URL. (We'll use this in the next section.)
+
+![github repo quick setup](https://curriculum-content.s3.amazonaws.com/web-development/enough-git-for-learn-co/github_quick_setup.png)
 
 
-##Connecting your remote repo to a local repo
+## Connecting your remote repo to a local repo
 1. `git init`
 2. `git add .` + `git commit -m "initialize git"`. Add and commit the new file created by the init command in the step 1.
 3. `git remote add origin your-remote-repository-URL`. This sets the remote, so you can push and pull code.
 
-###Note on Origin
+### Note on Origin
 What is `origin`? Origin is just the name of the repo, but it could be anything. Origin is simply a convention for the default repo name. Let's take a closer look by changing the name of the repo:
 
 ```bash
