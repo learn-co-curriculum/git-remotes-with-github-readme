@@ -20,6 +20,7 @@ GitHub does nothing special in the git universe. It's just another git repositor
 ![github repo quick setup](https://curriculum-content.s3.amazonaws.com/web-development/enough-git-for-learn-co/github_quick_setup.png)
 
 ## Connecting your remote repo to a local repo
+0. Create a new directory and add a file if you haven't already. (You can run this string of commands to to do this for you: `cd ~/code && mkdir my_new_directory && cd my_new_directory && touch readme.md && echo "This is my readme file" > readme.md`)
 1. `git init`
 2. `git add .` + `git commit -m "initialize git"`. Add and commit the new file created by the `git init` command in step 1.
 3. `git remote add origin your-remote-repository-URL`. This sets the remote, so you can push and pull code.
