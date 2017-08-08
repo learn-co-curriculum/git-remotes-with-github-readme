@@ -19,7 +19,7 @@ GitHub does nothing special in the git universe. It's just another git repositor
 ![github repo quick setup](https://curriculum-content.s3.amazonaws.com/web-development/enough-git-for-learn-co/github_quick_setup.png)
 
 ## Connecting your remote repo to a local repo
-1. Create a new directory and add a file if you haven't already. You can run this series of commands:
+1. Create a new directory and add a file. You can run this series of commands:
     * Change into your `code` directory: `cd ~/code`
       - If your development directory is named something other than `~/code`, that's fine — `cd` into whatever yours is called.
     * Create a new directory named `my_new_directory`: `mkdir my_new_directory`
