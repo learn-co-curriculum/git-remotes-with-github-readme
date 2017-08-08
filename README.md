@@ -12,7 +12,7 @@
 GitHub does nothing special in the git universe. It's just another git repository in the cloud. If you don't want to work with anyone else, you don't need remotes. However, this is rarely the case, and we want to work with others! So, we have to talk about remotes.
 
 ## Creating a remote repository on GitHub
-1. From your GitHub profile, click the "Create New Repository" button. Don't initialize the new repository with a README and don't add a `.gitignore` or license.
+1. While logged into GitHub, click the :heavy_plus_sign: in the menubar and select `New repository`. Alternatively, just navigate to [github.com/new](https://github.com/new). Don't change any of the default options — don't initialize the new repository with a README or add a `.gitignore` or license. Click the green `Create repository` button.
 2. After you create the repo, you should see a "Quick setup" page. Click the "Copy to clipboard" symbol next to the repo URL (pictured) to copy the URL. (We'll use this in the next section.)
 
 ![github repo quick setup](https://curriculum-content.s3.amazonaws.com/web-development/enough-git-for-learn-co/github_quick_setup.png)
