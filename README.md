@@ -1,7 +1,7 @@
-# Git Remotes + Github
+# Git Remotes + GitHub
 
 ## Objectives
-1. Describe Github and its relationship with Git
+1. Describe GitHub and its relationship with Git
 2. Create a remote repository on GitHub
 3. Use `git push` to connect your local repository of files to your remote repository
 4. Use `git remote`
@@ -12,8 +12,9 @@
 GitHub does nothing special in the git universe. It's just another git repository in the cloud. If you don't want to work with anyone else, you don't need remotes. However, this is rarely the case, and we want to work with others! So, we have to talk about remotes.
 
 ## Creating a remote repository on GitHub
-1. While logged into GitHub, click the :heavy_plus_sign: in the menubar and select `New repository`. Alternatively, just navigate to [github.com/new](https://github.com/new). Don't change any of the default options — don't initialize the new repository with a README or add a `.gitignore` or license. Click the green `Create repository` button.
-2. After you create the repo, you should see a "Quick setup" page. Click the "Copy to clipboard" symbol next to the repo URL (pictured) to copy the URL. (We'll use this in the next section.)
+1. While logged into GitHub, click the :heavy_plus_sign: in the menubar and select `New repository`. Alternatively, just navigate to [github.com/new](https://github.com/new).
+2. Enter a name for your repository in the `Repository name` field. You can name it whatever you'd like; be creative! The default options are fine as-is — don't initialize the new repository with a README or add a `.gitignore` or license. Click the green `Create repository` button.
+3. After you create the repo, you should see a "Quick setup" page. Click the "Copy to clipboard" symbol next to the repo URL (pictured) to copy the URL. (We'll use this in the next section.)
 
 ![github repo quick setup](https://curriculum-content.s3.amazonaws.com/web-development/enough-git-for-learn-co/github_quick_setup.png)
 
@@ -26,7 +27,7 @@ GitHub does nothing special in the git universe. It's just another git repositor
     * Create a new file named `README.md`: `touch README.md`
     * Add some text to the new file: `echo "This is my readme file" > README.md`
 2. `git init`
-3. `git add .` + `git commit -m "initialize git"`. Add and commit the new file created by the `git init` command in step 1.
+3. `git add .` + `git commit -m "initialize git"`. Add and commit the new file created in step 1.
 4. `git remote add origin your-remote-repository-URL`. This sets the remote, so you can push and pull code.
 
 ### Note on Origin
@@ -72,7 +73,7 @@ That is the explicit way to push. You can also implicitly push your code by runn
 ```bash
 git push
 ```
-This will push your code up to the remote repo/branch you're tracking.
+This will push your code up to the remote repo/branch you're tracking. The first time you push code up to a newly-added remote repository, use the `-u` flag to tell Git to track the remote repository: `git push -u origin master`. For every subsequent push, plain old `git push` will suffice.
 
 [For more details, check out the GitHub guide on pushing.](https://help.github.com/articles/pushing-to-a-remote/)
 
