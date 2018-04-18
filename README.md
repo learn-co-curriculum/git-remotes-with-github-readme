@@ -165,4 +165,21 @@ branch as arguments: `git pull origin master`.
 
 [For more details, check out the GitHub guide on pulling.](https://help.github.com/articles/fetching-a-remote/)
 
+
+
+## Editing directly on GitHub
+Say you liked your README, but you noticed a minor typo. Let's fix it directly on GitHub.
+
+1. Navigate to your remote repository on [GitHub.com](https://github.com/), e.g., https://github.com/username-here/repository-name-here.
+2. Click on your README file.
+3. At the top of the file, you'll notice a pencil icon (![GitHub pencil](http://i.imgur.com/J3HiLhO.png)). Clicking this will allow us to edit the file.
+4. Make some changes to your README.
+5. Commit them by clicking the "Commit changes" button at the bottom of the page.
+
+Perfect! But now the code on our machine (in our local repo) is out of sync with the remote repo. To remedy this, we must `pull` down the code to our local repo. To do so, run:
+
+```bash
+git pull
+``` 
+
 <p data-visibility="hidden">View <a href="https://learn.co/lessons/git-remotes-with-github-readme" title="Git Remotes + GitHub">Git Remotes + GitHub</a> on Learn.co and start learning to code for free.</p>
