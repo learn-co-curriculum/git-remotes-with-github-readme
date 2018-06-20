@@ -39,12 +39,14 @@ What is `origin`? "Origin" is simply the default alias assigned to your new
 remote repo, but we could rename it to anything. Let's try changing the name of
 the repo to `destination`:
 
-#### For the In-browser Learn IDE - Connecting your remote repo to a local repo
+#### For the In-browser Learn IDE 
 
 1. On this Learn.co lesson page, click the 'Sandbox' button to open up a blank
 IDE
-2. We first want to create a folder for our repository, which we'll call `my_new_directory`, so in the terminal, type `mkdir my_new_directory`.  The folder will appear in the tree on
-the left of the IDE. Alternatively, you can use the 'Create New' button at the
+2. We first want to create a folder for our repository, which we'll call
+`my_new_directory`, so in the terminal, type `mkdir my_new_directory`.  
+The folder will appear in the tree on the left of the IDE. Alternatively, 
+you can use the 'Create New' button at the
 bottom of the IDE
 4. To navigate into this new folder, type `cd my_new_directory`. Your terminal
 should display `my_new_directory`, indicating that you are now inside of the
@@ -69,11 +71,12 @@ and type the following into the terminal:
 `git remote add origin <your-copied-remote-repository-URL>`. This sets the
 remote, so you can push and pull code.
 
-#### For the Standalone Learn IDE - Connecting your remote repo to a local repo
+#### For the Standalone Learn IDE 
 
 1. Create a new directory and add a file. You can run this series of commands:
     * Change into your `code` directory: `cd ~/code`
-      - If your development directory is named something other than `~/code`, that's fine — `cd` into whatever yours is called.
+      - If your development directory is named something other than `~/code`, that's
+      fine — `cd` into whatever yours is called.
     * Create a new directory named `my_new_directory`: `mkdir my_new_directory`
     * Change into the newly-created directory: `cd my_new_directory`
     * Create a new file named `README.md`: `touch README.md`
@@ -189,7 +192,7 @@ git pull
 Being able to add and update git remotes allows you to be able to get repos started up
 from scratch. This will be important as you move past working on pre-existing projects.
 If you remember `git init`, `git remote add origin your-remote-repository-URL`, add, and
-push your changes, you'll be able to get your project up to github in minutes! 
+push your changes, you'll be able to get your project up to github in minutes!
 
 [For more details, check out the GitHub guide on pulling.](https://help.github.com/articles/fetching-a-remote/)
 
