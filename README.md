@@ -37,21 +37,8 @@ license. Click the green `Create repository` button.
 
 ## Demonstrate Connecting Your Local Repository of Files to Your Remote Repository
 
-After you've created your GitHub repository, you're now ready to upload the
-the commits you've created from your local repository. To connect your local
-repository to the newly created GitHub repository, you must add a new remote.
-Use `git remote add` command on the terminal in the directory of your repository.
-
-The `git remote add` command consists of a remote name, by default, origin and
-a remote URL such as https://github.com/user/repository-name.git
-
-The remote name _origin- is the default alias assigned to your new remote repo.
-It can be renamed to anything. 
-
-Enter the command into your terminal, replacing the url of the repo with the
-one provide url provided by GitHub:
-
-```git remote add origin https://github.com/user/repository-name.git```
+After you've created your GitHub repository, you'll want to get your local repository
+uploaded to GitHub. Follow the appropriate steps below":
 
 #### For the In-browser Learn IDE 
 
@@ -83,7 +70,10 @@ remote we created earlier.
 10. Now, make sure you've still got your remote git info copied from GitHub,
 and type the following into the terminal:
 `git remote add origin <your-copied-remote-repository-URL>`. This sets the
-remote, so you can push and pull code.
+remote, so you can push code. The `git remote add` command consists of a 
+remote name, by default, origin and a remote URL such as https://github.com/user/repository-name.git. The remote name _origin_ is
+the default alias assigned to your new remote repo. It can be renamed
+to anything. 
 
 #### For the Standalone Learn IDE 
 
@@ -105,7 +95,10 @@ remote we created earlier.
 5. Now, make sure you've still got your remote git info copied from GitHub,
 and type the following into the terminal:
 `git remote add origin <your-copied-remote-repository-URL>`. This sets the
-remote, so you can push and pull code.
+remote, so you can push code. The `git remote add` command consists of a
+remote name, by default, origin and a remote URL such as https://github.com/user/repository-name.git. The remote name _origin_ is
+the default alias assigned to your new remote repo. It can be renamed
+to anything.
 
 ## Use `git remote` to Set the Destination of Your Repo
 
@@ -124,7 +117,7 @@ git remote -v
 # destination  https://github.com/OWNER/REPOSITORY.git (push)
 ```
 
-For consistency's sake, let's go ahead and rename `destination` back to `origin`:
+Let's rename `destination` back to `origin`:
 
 ```bash
 git remote rename destination origin
@@ -133,31 +126,30 @@ git remote rename destination origin
 ## Use `git push` to Send Code to the Remote Repo
 
 Now that we added a remote repo, we need to send our latest work the remote.
-
 We use this command when we want to send some code from the local repository to
-the associated remote repository.
+the associated remote repository. The `git push` command takes two arguments.
+The first is the name of the remote repo. Remember, `origin` is just an alias
+that refers to the repository name.You don't actually have to enter the
+repository name. Instead, you can just use `origin`. The second is the name
+of the remote branch you want to send code to. In the example below, we're
+pushing to our remote repository, referred to as
+`origin`.
 
-The `git push` command takes two arguments. The first is the name of the remote
-repo. Remember, `origin` is just an alias that refers to the repository name.
-You don't actually have to enter the repository name. Instead, you can just use
-`origin`. The second is the name of the remote branch you want to send code to.
-In the example below, we're pushing to the master branch of our remote
-repository, referred to as `origin`. To find all the remote branch names, run
-`git branch -r`.
+TO implicitly push your code, you can run:
+
+```bash
+git push
+```
+To `explicitly` push your changes, you can use:
 
 ```bash
 git push origin master
 ```
 
-That is the explicit way to push. You can also implicitly push your code by running:
-
-```bash
-git push
-```
-This will push your code up to the remote repo/branch you're tracking. The
+This will push your code up to the remote repo/branch. The
 first time you push code up to a newly-added remote repository, use the `-u`
-flag to tell Git to track the remote repository: `git push -u origin master`.
-For every subsequent push, plain old `git push` will suffice.
+flag to tell Git to "save" the remote repositiory: `git push -u origin master`.
+For every subsequent push, using `git push` will suffice.
 
 [For more details, check out the GitHub guide on pushing.](https://help.github.com/articles/pushing-to-a-remote/)
 
@@ -186,10 +178,9 @@ branch as arguments: `git pull origin master`.
 
 ## Conclusion
 
-Being able to add and update git remotes allows you to be able to get repos started up
-from scratch. This will be important as you move past working on pre-existing projects.
+Being able to add and update git remotes allows you to back up your local repository to a remote server. This will be important as you move past working on pre-existing projects.
 If you remember `git init`, `git remote add origin your-remote-repository-URL`, add, and
-push your changes, you'll be able to get your project up to github in minutes!
+push your changes, you'll be able to get your project up to GitHub in minutes!
 
 [For more details, check out the GitHub guide on pulling.](https://help.github.com/articles/fetching-a-remote/)
 
