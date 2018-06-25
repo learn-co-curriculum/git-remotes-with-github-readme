@@ -2,12 +2,15 @@
 
 ## Problem Statement
 
-GitHub does nothing special in the git universe. It's just another git
-repository in the cloud. Creating remote repositories on GitHub is very handy
-if you're ever working on a project while using multiple computers, and is
-especially helpful if you're working on a project with others. If you don't
-want to work with anyone else, you may not need remotes, but, in our case, we
-want to work with others! So, we have to talk about remotes.
+As strange as it may seem, GitHub does nothing special in the git universe. 
+It's just another git repository in the cloud. A repository that's non-local
+is called a _remote_. You've seen how valuable _remotes_ are for _getting_
+software. Let's learn about the other side of the equation: let's learn to
+mirror our _local_ repository to a _remote_ using `git push` and `git remote`.
+Once your code is on a _remote_, it's backed up &mdash; which is always a good
+thing &mdash; and it's available for _someone else_ to `fork` or `clone` and
+benefit from. You might see the hint of a collaboration model there. We'll
+talk about collaboration soon, but first, let's learn how to `push` our code!
 
 ## Objectives
 
@@ -16,13 +19,12 @@ want to work with others! So, we have to talk about remotes.
 3. Use `git remote` to set the destination of your repo
 4. Use `git push` to send code to the remote repo
 5. Use `git pull` to retrieve code from the remote repo
-6. Use Github to make direct edits
 
 
 ## Explain Creating a Remote Repository on GitHub
 
-1. While logged into GitHub, in the upper right corner, click the **+** in the
-menubar and select `New repository`. Alternatively, you can navigate to [github.com/new](https://github.com/new).
+1. To create a new repository, go to: [github.com/new](https://github.com/new),
+while logged into GitHub.
 2. Enter a name for your repository in the `Repository name` field. You can
 name it whatever you'd like; be creative! The default options are fine as-is —
 don't initialize the new repository with a README or add a `.gitignore` or
@@ -35,9 +37,21 @@ license. Click the green `Create repository` button.
 
 ## Demonstrate Connecting Your Local Repository of Files to Your Remote Repository
 
-What is `origin`? "Origin" is simply the default alias assigned to your new
-remote repo, but we could rename it to anything. Let's try changing the name of
-the repo to `destination`:
+After you've created your GitHub repository, you're now ready to upload the
+the commits you've created from your local repository. To connect your local
+repository to the newly created GitHub repository, you must add a new remote.
+Use `git remote add` command on the terminal in the directory of your repository.
+
+The `git remote add` command consists of a remote name, by default, origin and
+a remote URL such as https://github.com/user/repository-name.git
+
+The remote name _origin- is the default alias assigned to your new remote repo.
+It can be renamed to anything. 
+
+Enter the command into your terminal, replacing the url of the repo with the
+one provide url provided by GitHub:
+
+```git remote add origin https://github.com/user/repository-name.git```
 
 #### For the In-browser Learn IDE 
 
@@ -92,7 +106,6 @@ remote we created earlier.
 and type the following into the terminal:
 `git remote add origin <your-copied-remote-repository-URL>`. This sets the
 remote, so you can push and pull code.
-
 
 ## Use `git remote` to Set the Destination of Your Repo
 
@@ -170,22 +183,6 @@ Again, we can also do this explicitly if need be by adding the remote name and
 branch as arguments: `git pull origin master`.
 
 [For more details, check out the GitHub guide on pulling.](https://help.github.com/articles/fetching-a-remote/)
-
-## Use Github to Make Direct Edits
-
-Say you liked your README, but you noticed a minor typo. Let's fix it directly on GitHub.
-
-1. Navigate to your remote repository on [GitHub.com](https://github.com/), e.g., https://github.com/username-here/repository-name-here.
-2. Click on your README file.
-3. At the top of the file, you'll notice a pencil icon (![GitHub pencil](http://i.imgur.com/J3HiLhO.png)). Clicking this will allow us to edit the file.
-4. Make some changes to your README.
-5. Commit them by clicking the "Commit changes" button at the bottom of the page.
-
-Perfect! But now the code on our machine (in our local repo) is out of sync with the remote repo. To remedy this, we must `pull` down the code to our local repo. To do so, run:
-
-```bash
-git pull
-``` 
 
 ## Conclusion
 
