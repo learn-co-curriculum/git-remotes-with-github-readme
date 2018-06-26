@@ -2,8 +2,8 @@
 
 ## Problem Statement
 
-As strange as it may seem, GitHub does nothing special in the git universe. 
-It's just another git repository in the cloud. A repository that's non-local
+As strange as it may seem, GitHub does nothing special in the `git` universe. 
+It's just another `git` repository in the cloud. A repository that's non-local
 is called a _remote_. You've seen how valuable _remotes_ are for _getting_
 software. Let's learn about the other side of the equation: let's learn to
 mirror our _local_ repository to a _remote_ using `git push` and `git remote`.
