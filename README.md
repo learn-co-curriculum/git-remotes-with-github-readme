@@ -92,7 +92,7 @@ To connect your local repository to the newly created GitHub repository, you mus
 add a new remote. Make sure you've still got your remote git info copied from GitHub,
 and type the following into the terminal:
 `git remote add origin <your-copied-remote-repository-URL>`. This sets the
-remote, so you can push code. The `git remote add` command consists of a
+remote, so you can push code. The `git remote add` command takes a
 remote name, by default, origin and a remote URL such as https://github.com/user/repository-name.git. 
 The remote name _origin_ is the default alias assigned to your new remote repo.
 It can be renamed to anything. 
