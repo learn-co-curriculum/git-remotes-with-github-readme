@@ -7,6 +7,7 @@ It's just another `git` repository in the cloud. A repository that's non-local
 is called a _remote_. You've seen how valuable _remotes_ are for _getting_
 software. Let's learn about the other side of the equation: let's learn to
 mirror our _local_ repository to a _remote_ using `git push` and `git remote`.
+
 Once your code is on a _remote_, it's backed up &mdash; which is always a good
 thing &mdash; and it's available for _someone else_ to `fork` or `clone` and
 benefit from. You might see the hint of a collaboration model there. We'll
