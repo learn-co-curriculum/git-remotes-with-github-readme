@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-As strange as it may seem, GitHub does nothing special in the `git` universe. 
+As strange as it may seem, GitHub does nothing special in the `git` universe.
 It's just another `git` repository in the cloud. A repository that's non-local
 is called a _remote_. You've seen how valuable _remotes_ are for _getting_
 software. Let's learn about the other side of the equation: let's learn to
@@ -40,13 +40,13 @@ license. Click the green `Create repository` button.
 After you've created your GitHub repository, you'll want to get your local repository
 uploaded to GitHub. Follow the appropriate steps below":
 
-#### For the In-browser Learn IDE 
+#### For the In-browser Learn IDE
 
 1. On this Learn.co lesson page, click the 'Sandbox' button to open up a blank
 IDE
 2. We first want to create a folder for our repository, which we'll call
-`my_new_directory`, so in the terminal, type `mkdir my_new_directory`.  
-The folder will appear in the tree on the left of the IDE. Alternatively, 
+`my_new_directory`, so in the terminal, type `mkdir my_new_directory`.
+The folder will appear in the tree on the left of the IDE. Alternatively,
 you can use the 'Create New' button at the
 bottom of the IDE
 4. To navigate into this new folder, type `cd my_new_directory`. Your terminal
@@ -68,7 +68,7 @@ that an 'empty Git repository' has been initialized.
 commit for this local repository, which will allow us to push our work to the
 remote we created earlier.
 
-#### For the Standalone Learn IDE 
+#### For the Standalone Learn IDE
 
 1. Create a new directory and add a file. You can run this series of commands:
     * Change into your `code` directory: `cd ~/code`
@@ -93,9 +93,9 @@ add a new remote. Make sure you've still got your remote git info copied from Gi
 and type the following into the terminal:
 `git remote add origin <your-copied-remote-repository-URL>`. This sets the
 remote, so you can push code. The `git remote add` command takes a
-remote name, by default, origin and a remote URL such as https://github.com/user/repository-name.git. 
+remote name, by default, origin and a remote URL such as https://github.com/user/repository-name.git.
 The remote name _origin_ is the default alias assigned to your new remote repo.
-It can be renamed to anything. 
+It can be renamed to anything.
 
 You can use `git remote -v` to view the remote.
 
