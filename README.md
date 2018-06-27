@@ -19,7 +19,6 @@ talk about collaboration soon, but first, let's learn how to `push` our code!
 2. Demonstrate connecting your local repository of files to your remote repository
 3. Use `git remote` to set the destination of your repo
 4. Use `git push` to send code to the remote repo
-5. Use `git pull` to retrieve code from the remote repo
 
 
 ## Explain Creating a Remote Repository on GitHub
@@ -137,35 +136,8 @@ For every subsequent push, using `git push` will suffice.
 
 [For more details, check out the GitHub guide on pushing.](https://help.github.com/articles/pushing-to-a-remote/)
 
-
-##  Use `git pull` to Retrieve Code from the Remote Repo
-
-As we collaborate with other people, inevitably, they will push some code. The
-only problem is that once this happens, the code on our machine (our local
-repo) will be out of sync with the remote repo. To remedy this, we must pull
-down the new code from the remote repo to our local. No surprise here. To do
-this, run:
-
-```bash
-git pull
-```
-
-In our case, running `git pull` should return the message `Already up-to-date.`,
-since our remote hasn't been modified.  If there was new content, the terminal
-will show that it is unpacking and updating, then list out any files that have
-been updated.
-
-Again, we can also do this explicitly if need be by adding the remote name and
-branch as arguments: `git pull origin master`.
-
-[For more details, check out the GitHub guide on pulling.](https://help.github.com/articles/fetching-a-remote/)
-
 ## Conclusion
 
 Being able to add git remotes allows you to back up your local repository to a remote server. This will be important as you move past working on pre-existing projects.
 If you remember `git init`, `git remote add origin your-remote-repository-URL`, add, and
 push your changes, you'll be able to get your project up to GitHub in minutes!
-
-[For more details, check out the GitHub guide on pulling.](https://help.github.com/articles/fetching-a-remote/)
-
-<p data-visibility="hidden">View <a href="https://learn.co/lessons/git-remotes-with-github-readme" title="Git Remotes + GitHub">Git Remotes + GitHub</a> on Learn.co and start learning to code for free.</p>
