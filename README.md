@@ -2,11 +2,12 @@
 
 ## Problem Statement
 
-As strange as it may seem, GitHub does nothing special in the `git` universe. 
+As strange as it may seem, GitHub does nothing special in the `git` universe.
 It's just another `git` repository in the cloud. A repository that's non-local
 is called a _remote_. You've seen how valuable _remotes_ are for _getting_
 software. Let's learn about the other side of the equation: let's learn to
 mirror our _local_ repository to a _remote_ using `git push` and `git remote`.
+
 Once your code is on a _remote_, it's backed up &mdash; which is always a good
 thing &mdash; and it's available for _someone else_ to `fork` or `clone` and
 benefit from. You might see the hint of a collaboration model there. We'll
@@ -18,7 +19,6 @@ talk about collaboration soon, but first, let's learn how to `push` our code!
 2. Demonstrate connecting your local repository of files to your remote repository
 3. Use `git remote` to set the destination of your repo
 4. Use `git push` to send code to the remote repo
-5. Use `git pull` to retrieve code from the remote repo
 
 
 ## Explain Creating a Remote Repository on GitHub
@@ -40,13 +40,13 @@ license. Click the green `Create repository` button.
 After you've created your GitHub repository, you'll want to get your local repository
 uploaded to GitHub. Follow the appropriate steps below":
 
-#### For the In-browser Learn IDE 
+#### For the In-browser Learn IDE
 
 1. On this Learn.co lesson page, click the 'Sandbox' button to open up a blank
 IDE
 2. We first want to create a folder for our repository, which we'll call
-`my_new_directory`, so in the terminal, type `mkdir my_new_directory`.  
-The folder will appear in the tree on the left of the IDE. Alternatively, 
+`my_new_directory`, so in the terminal, type `mkdir my_new_directory`.
+The folder will appear in the tree on the left of the IDE. Alternatively,
 you can use the 'Create New' button at the
 bottom of the IDE
 4. To navigate into this new folder, type `cd my_new_directory`. Your terminal
@@ -68,7 +68,7 @@ that an 'empty Git repository' has been initialized.
 commit for this local repository, which will allow us to push our work to the
 remote we created earlier.
 
-#### For the Standalone Learn IDE 
+#### For the Standalone Learn IDE
 
 1. Create a new directory and add a file. You can run this series of commands:
     * Change into your `code` directory: `cd ~/code`
@@ -93,9 +93,9 @@ add a new remote. Make sure you've still got your remote git info copied from Gi
 and type the following into the terminal:
 `git remote add origin <your-copied-remote-repository-URL>`. This sets the
 remote, so you can push code. The `git remote add` command takes a
-remote name, by default, origin and a remote URL such as https://github.com/user/repository-name.git. 
+remote name, by default, origin and a remote URL such as https://github.com/user/repository-name.git.
 The remote name _origin_ is the default alias assigned to your new remote repo.
-It can be renamed to anything. 
+It can be renamed to anything.
 
 You can use `git remote -v` to view the remote.
 
@@ -136,35 +136,8 @@ For every subsequent push, using `git push` will suffice.
 
 [For more details, check out the GitHub guide on pushing.](https://help.github.com/articles/pushing-to-a-remote/)
 
-
-##  Use `git pull` to Retrieve Code from the Remote Repo
-
-As we collaborate with other people, inevitably, they will push some code. The
-only problem is that once this happens, the code on our machine (our local
-repo) will be out of sync with the remote repo. To remedy this, we must pull
-down the new code from the remote repo to our local. No surprise here. To do
-this, run:
-
-```bash
-git pull
-```
-
-In our case, running `git pull` should return the message `Already up-to-date.`,
-since our remote hasn't been modified.  If there was new content, the terminal
-will show that it is unpacking and updating, then list out any files that have
-been updated.
-
-Again, we can also do this explicitly if need be by adding the remote name and
-branch as arguments: `git pull origin master`.
-
-[For more details, check out the GitHub guide on pulling.](https://help.github.com/articles/fetching-a-remote/)
-
 ## Conclusion
 
 Being able to add git remotes allows you to back up your local repository to a remote server. This will be important as you move past working on pre-existing projects.
 If you remember `git init`, `git remote add origin your-remote-repository-URL`, add, and
 push your changes, you'll be able to get your project up to GitHub in minutes!
-
-[For more details, check out the GitHub guide on pulling.](https://help.github.com/articles/fetching-a-remote/)
-
-<p data-visibility="hidden">View <a href="https://learn.co/lessons/git-remotes-with-github-readme" title="Git Remotes + GitHub">Git Remotes + GitHub</a> on Learn.co and start learning to code for free.</p>
