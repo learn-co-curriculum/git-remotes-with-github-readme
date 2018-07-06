@@ -86,7 +86,7 @@ remote repository we created earlier.
 2. Now that we've got some basic content, we can initialize our local
 repository, so in your terminal, type `git init`.  Your terminal should show
 that an 'empty Git repository' has been initialized.
-3. Type `git add .` to stage the new `README.md` file so it will be tracked by git
+3. Type `git add .` to stage the new `README.md` file so it will be tracked by `git`
 4. Now, type `git commit -m 'initialize git'`.  This will create the first
 commit for this local repository, which will allow us to push our work to the
 remote we created earlier.
@@ -104,7 +104,7 @@ to that long "repository path." It's common to have a "default" remote. The
 default remote short name is called `master`. So we're going to create a new
 remote with short name of `master`.
 
-Make sure you've still got your remote git info copied from GitHub, and type
+Make sure you've still got your remote `git` info copied from GitHub, and type
 the following into the terminal:
 
 `git remote add origin <your-copied-remote-repository-URL>`.
@@ -149,7 +149,7 @@ git push origin master
 > $ git push hackMaster master
 
 This will push your code up to the remote repo/branch. The first time you push
-code up to a newly-added remote repository, use the `-u` flag to tell Git to
+code up to a newly-added remote repository, use the `-u` flag to tell `git` to
 "save" the remote repositiory: `git push -u origin master`.  For every
 subsequent push, using `git push` will suffice.
 
@@ -157,7 +157,7 @@ subsequent push, using `git push` will suffice.
 
 ## Conclusion
 
-Being able to add git remotes allows you to back up your local repository to a
+Being able to add `git` remotes allows you to back up your local repository to a
 remote server. This will be important as you move past working on pre-existing
 projects.  If you remember `git init`, `git remote add origin
 your-remote-repository-URL`, add, and push your changes, you'll be able to get
